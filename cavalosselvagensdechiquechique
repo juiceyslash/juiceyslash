@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sua Página de Aniversário</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .small-image {
+      max-width: 50%; /* Ajuste a largura conforme necessário */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    // Criando um elemento de parágrafo para o texto "Feliz Aniversário"
+    var paragrafo = document.createElement("p");
+    paragrafo.textContent = "🎈🎁🎉🍰Feliz Aniversário🍰🎉🎁🎈";
+    document.body.appendChild(paragrafo);
+
+    // Criando um elemento de imagem 1
+    var imagem1 = document.createElement("img");
+    imagem1.src = "https://fv5-3.failiem.lv/thumb.php?i=566e4ys4vk&v=1&n=Screenshot_20240122-222227.jpg";
+    document.body.appendChild(imagem1);
+
+    // Criando um elemento de parágrafo para o texto "Número da sua"
+    var numeroParagrafo = document.createElement("p");
+    numeroParagrafo.textContent = "👇🙏Número da sua irmã🙏 👇";
+    document.body.appendChild(numeroParagrafo);
+
+    // Criando um elemento de input para a caixa de texto
+    var caixaDeTexto = document.createElement("input");
+
+    // Definindo o tipo de input como texto
+    caixaDeTexto.type = "text";
+
+    // Adicionando a caixa de texto ao corpo do documento
+    document.body.appendChild(caixaDeTexto);
+
+    // Criando um elemento de imagem 2 (com classe para torná-la menor)
+    var imagem2 = document.createElement("img");
+    imagem2.src = "https://files.fm/thumb_video_picture.php?i=5fmuy7mfff";
+    imagem2.classList.add("small-image");
+    document.body.appendChild(imagem2);
+  </script>
+
+</body>
+</html>
